@@ -117,8 +117,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <div class="eyebrow">Wczesny dostęp — testowanie z pierwszymi klubami</div>
     <h1 class="title">Zawody strzeleckie, policzone offline, na czas.</h1>
     <p class="lede">TargetMint to desktopowa aplikacja do prowadzenia zawodów strzeleckich (pistolet/karabinek) —
-    działa w pełni bez internetu na strzelnicy, a mimo to pozwala kilku sędziom wprowadzać wyniki
-    jednocześnie i pokazuje ranking na żywo na rzutniku. Na koniec — oficjalne dokumenty gotowe do podpisu.</p>
+    wpisywanie wyników, ranking na żywo na rzutniku i oficjalne dokumenty gotowe do podpisu działają
+    w pełni bez internetu na strzelnicy. Gdy internet jest dostępny, kilku sędziów może wprowadzać
+    wyniki jednocześnie z osobnych stanowisk.</p>
     <div class="cta-row">
       <a class="btn primary" href="https://discord.gg/FTkRgbdH2Z" target="_blank" rel="noopener">Dołącz do Discorda</a>
       <a class="btn ghost" href="#pobierz">Zobacz jak pobrać</a>
@@ -197,16 +198,24 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <div class="platforms">
       <div class="platform">
         <h3>🪟 Windows</h3>
+        <p>Wymagania: Windows 10 lub 11, 64-bit.</p>
         <p>Uruchom instalator <code>.exe</code> i postępuj zgodnie z kreatorem.</p>
+        <p style="margin-top:12px">Aplikacja nie jest jeszcze podpisana certyfikatem (wczesny dostęp) —
+        Windows SmartScreen pokaże ostrzeżenie. Kliknij <strong>„Więcej informacji"</strong>, a potem
+        <strong>„Uruchom mimo to"</strong>.</p>
+        <a class="btn primary" style="margin-top:16px" href="https://github.com/pawel-key/TargetMint-dist/releases/latest" target="_blank" rel="noopener">Pobierz dla Windows →</a>
       </div>
       <div class="platform">
         <h3>🐧 Linux</h3>
+        <p><span class="status-badge" style="background:var(--accent-bg);color:var(--accent-strong)">⚠ obecnie wersja 1.4.30</span></p>
+        <p>Build Linuksa wymaga osobnego procesu (poza tym używanym dziś do Windows) — nowsza wersja
+        (aktualnie 1.4.33 na Windows) trafi na Linuksa wkrótce. Funkcjonalnie to ten sam program.</p>
         <p>Pakiet <code>.deb</code>:</p>
         <code>sudo dpkg -i nazwa-pliku.deb</code>
         <p style="margin-top:12px">Albo uruchom <code>.AppImage</code> bezpośrednio — nie wymaga instalacji.</p>
+        <a class="btn ghost" style="margin-top:16px" href="https://github.com/pawel-key/TargetMint-dist/releases/tag/v1.4.30" target="_blank" rel="noopener">Pobierz dla Linuksa (v1.4.30) →</a>
       </div>
     </div>
-    <a class="btn primary" href="https://github.com/pawel-key/TargetMint-dist/releases/latest" target="_blank" rel="noopener">Pobierz najnowszą wersję →</a>
   </div>
 </section>
 
@@ -231,7 +240,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <div class="faq-item">
         <h3>Który plik pobrać na Linuksie?</h3>
         <p><code>.AppImage</code> (uniwersalny, działa na większości dystrybucji) albo <code>.deb</code>
-        (Debian/Ubuntu/Mint).</p>
+        (Debian/Ubuntu/Mint). Build Linuksa jest chwilowo w tyle za Windows (dziś 1.4.30 vs 1.4.33) —
+        nadrobimy to wkrótce.</p>
       </div>
       <div class="faq-item">
         <h3>Jak aktualizować program?</h3>
@@ -261,7 +271,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 TargetMint · Oprogramowanie własnościowe</span>
+    <span>© 2026 TargetMint · Oprogramowanie własnościowe ·
+      <a href="https://github.com/pawel-key/TargetMint/blob/main/EULA.md" target="_blank" rel="noopener">Umowa licencyjna</a> ·
+      <a href="https://github.com/pawel-key/TargetMint/blob/main/POLITYKA-PRYWATNOSCI.md" target="_blank" rel="noopener">Polityka prywatności</a>
+    </span>
     <span>Kontakt: <a href="mailto:TargetMint@protonmail.com">TargetMint@protonmail.com</a></span>
   </div>
 </footer>
